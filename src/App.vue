@@ -1,7 +1,20 @@
 <script>
-export default {};
+import Header from '@/views/Header.vue';
+
+export default {
+  components: { Header },
+};
 </script>
 
-<template></template>
+<template>
+  <Header />
+</template>
 
-<style></style>
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 3000px;
+}
+</style>

@@ -1,0 +1,46 @@
+.header {
+  @include position(fixed, 0, unset, unset, 0);
+  @include w-h(100vw, 56px);
+  @include d-flex-a-center;
+  justify-content: space-between;
+  border-bottom: 3px solid #ccc;
+
+  .logo {
+    @include d-flex-a-center;
+    margin-left: 24px;
+
+    .bi-play-btn-fill {
+      color: red;
+      font-size: 30px;
+    }
+
+    .text {
+      font-size: 20px;
+      margin-left: 4px;
+      font-weight: bold;
+      letter-spacing: -2px;
+    }
+  }
+
+  .user {
+    @include d-flex-a-center;
+    margin-right: 36px;
+
+    .bi-search {
+      font-size: 18px;
+      color: #757575;
+      margin-right: 32px;
+    }
+
+    .info {
+      @include w-h(30px, 30px);
+      @include d-flex-a-center-j-center;
+      border-radius: 50%;
+      background-color: #795548;
+
+      span {
+        color: white;
+      }
+    }
+  }
+}

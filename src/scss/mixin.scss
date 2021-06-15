@@ -1,0 +1,28 @@
+@mixin w-h($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin position($position, $top, $right, $bottom, $left) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+@mixin d-flex-a-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin d-flex-j-center {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin d-flex-a-center-j-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

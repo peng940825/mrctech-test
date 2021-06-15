@@ -2,9 +2,9 @@
   @include position(fixed, 0, unset, unset, 0);
   @include w-h(100%, 56px);
   @include d-flex-a-center;
-  background-color: white;
   justify-content: space-between;
   border-bottom: 3px solid #ccc;
+  background-color: white;
 
   .logo {
     @include d-flex-a-center;

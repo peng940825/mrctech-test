@@ -4,6 +4,7 @@
   margin-top: 56px;
   padding: 0 16px;
   overflow: hidden;
+  background-color: white;
 
   .label {
     @include w-h(unset, 32px);
@@ -11,6 +12,7 @@
     font-weight: bold;
     margin: 0 8px;
     padding: 0 12px;
+    border: 1px solid #ccc;
     border-radius: 16px;
     background-color: #eee;
   }

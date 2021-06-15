@@ -1,0 +1,25 @@
+.footer {
+  @include position(fixed, unset, unset, 0, 0);
+  @include w-h(100%, 64px);
+  display: flex;
+
+  .home,
+  .trending,
+  .subscription,
+  .library {
+    @include w-h(25%, 100%);
+    @include d-flex-a-center-j-center;
+    flex-direction: column;
+    background-color: white;
+
+    .bi {
+      font-size: 22px;
+      margin-bottom: -2px;
+    }
+
+    span {
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
+}

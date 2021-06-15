@@ -1,0 +1,33 @@
+.menu {
+  @include w-h(100%, 56px);
+  @include d-flex-a-center;
+  margin-top: 56px;
+  padding: 0 16px;
+  overflow: hidden;
+
+  .label {
+    @include w-h(unset, 32px);
+    @include d-flex-a-center;
+    font-weight: bold;
+    margin: 0 8px;
+    padding: 0 12px;
+    border-radius: 16px;
+    background-color: #eee;
+  }
+}
+
+@media (max-width: 576px) {
+  .menu {
+    @include w-h(100%, 64px);
+    overflow: scroll;
+
+    &::-webkit-scrollbar {
+      @include w-h(8px, 8px);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 8px;
+      background-color: #ccc;
+    }
+  }
+}

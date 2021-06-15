@@ -1,7 +1,8 @@
 .header {
   @include position(fixed, 0, unset, unset, 0);
-  @include w-h(100vw, 56px);
+  @include w-h(100%, 56px);
   @include d-flex-a-center;
+  background-color: white;
   justify-content: space-between;
   border-bottom: 3px solid #ccc;
 
@@ -24,7 +25,7 @@
 
   .user {
     @include d-flex-a-center;
-    margin-right: 36px;
+    margin-right: 24px;
 
     .bi-search {
       font-size: 18px;

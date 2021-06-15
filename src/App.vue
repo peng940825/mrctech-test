@@ -1,20 +1,24 @@
 <script>
 import Header from '@/views/Header.vue';
+import Menu from '@/views/Menu.vue';
 
 export default {
-  components: { Header },
+  components: { Header, Menu },
 };
 </script>
 
 <template>
   <Header />
+  <Menu />
 </template>
 
 <style>
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   height: 3000px;
 }
 </style>

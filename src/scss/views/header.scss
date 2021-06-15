@@ -2,6 +2,7 @@
   @include position(fixed, 0, unset, unset, 0);
   @include w-h(100%, 56px);
   @include d-flex-a-center;
+  z-index: 999;
   justify-content: space-between;
   border-bottom: 3px solid #ccc;
   background-color: white;
